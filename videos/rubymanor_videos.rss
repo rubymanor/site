@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ruby Manor Videos</title>
+    <link>http://rubymanor.org/videos/</link>
+    <description>Videos of the talks given at the Ruby Manor conference in London on the 22nd November 2008.</description>
+    <language>en</language>
+    <generator>My hands</generator>
+    <image>
+      <url>http://rubymanor.org/images/frame.png</url>
+      <title>Ruby Manor Videos</title>
+      <link>http://rubymanor.org/videos/</link>
+    </image>
+    <atom:link href="http://rubymanor.org/videos/rubymanor_videos.rss" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>Ruby Manor Presents</title>
+      <description>The trailer video for what's to come.</description>
+      <link>http://rubymanor.org/videos/trailer/</link>
+      <pubDate>Wed, 14 Jan 2009 15:00:00 +0000</pubDate>
+      <guid>http://rubymanor.org/videos/trailer/trailer.m4v</guid>
+      <enclosure url="http://rubymanor.org/videos/trailer/trailer.m4v" length="9604442" type="video/mp4"/>
+    </item>
+
+    <item>
+      <title>8 Minutes On Rack</title>
+      <description>&lt;a href="http://danwebb.net"&gt;Dan Webb&lt;/a&gt; "8 Minutes On Rack" &amp;mdash; &lt;a href="http://www.slideshare.net/danwrong/8-minutes-on-rack-presentation/"&gt;slides&lt;/a&gt;</description>
+      <link>http://rubymanor.org/videos/rack/</link>
+      <pubDate>Wed, 14 Jan 2009 15:10:00 +0000</pubDate>
+      <guid>http://rubymanor.org/videos/rack/rack.mp4</guid>
+      <enclosure url="http://rubymanor.org/videos/rack/rack.mp4" length="69256992" type="video/mp4"/>
+    </item>
+
+    <item>
+      <title>I'm An Evil iPlayer Hacker</title>
+      <description>&lt;a href="http://po-ru.com"&gt;Paul Battley&lt;/a&gt; "I'm An Evil iPlayer Hacker" &amp;mdash; &lt;a href="http://po-ru.com/presentations/iplayer-hacker/"&gt;slides&lt;/a&gt;</description>
+      <link>http://rubymanor.org/videos/iplayer/</link>
+      <pubDate>Wed, 14 Jan 2009 15:15:00 +0000</pubDate>
+      <guid>http://rubymanor.org/videos/iplayer/iplayer.mp4</guid>
+      <enclosure url="http://rubymanor.org/videos/iplayer/iplayer.mp4" length="211791060" type="video/mp4"/>
+    </item>
+
+
+    <item>
+      <title>Unobtrusive Metaprogramming</title>
+      <description>&lt;a href="http://seanohalpin.github.com/"&gt;Sean O'Halpin&lt;/a&gt; "Unobtrusive Metaprogramming" &amp;mdash; &lt;a href="http://seanohalpin.github.com/unobtrusive-metaprogramming/unobtrusive-metaprogramming.html"&gt;slides&lt;/a&gt;</description>
+      <link>http://rubymanor.org/videos/unobtrusive_metaprogramming/</link>
+      <pubDate>Wed, 14 Jan 2009 15:20:00 +0000</pubDate>
+      <guid>http://rubymanor.org/videos/unobtrusive_metaprogramming/unobtrusive_metaprogramming.mp4</guid>
+      <enclosure url="http://rubymanor.org/videos/unobtrusive_metaprogramming/unobtrusive_metaprogramming.mp4" length="144797561" type="video/mp4"/>
+    </item>
+
+    <item>
+      <title>GUI Manor Born</title>
+      <description>&lt;a href="http://www.beyondthetype.com/"&gt;Martin Sadler&lt;/a&gt; and &lt;a href="http://h-lame.com/"&gt;Murray Steele&lt;/a&gt; "GUI Manor Born" &amp;mdash; &lt;a href="http://www.slideshare.net/hlame/tying-your-shoes-presentation/"&gt;slides&lt;/a&gt; and &lt;a href="http://www.slideshare.net/martinbtt/monkeybars-in-the-manor-presentation"&gt;slides&lt;/a&gt;</description>
+      <link>http://rubymanor.org/videos/gui_manor_born/</link>
+      <pubDate>Wed, 14 Jan 2009 22:55:00 +0000</pubDate>
+      <guid>http://rubymanor.org/videos/gui_manor_born/gui_manor_born.mp4</guid>
+      <enclosure url="http://rubymanor.org/videos/gui_manor_born/gui_manor_born.mp4" length="162021302" type="video/mp4"/>
+    </item>
+
+    <item>
+      <title>Nanite</title>
+      <description>&lt;a href="http://www.rowtheboat.com/"&gt;George Palmer&lt;/a&gt; "Nanite" &amp;mdash; &lt;a href="http://www.slideshare.net/Georgio_1999/rubymanor-presentation/"&gt;slides&lt;/a&gt;</description>
+      <link>http://rubymanor.org/videos/nanite/</link>
+      <pubDate>Fri, 16 Jan 2009 09:55:00 +0000</pubDate>
+      <guid>http://rubymanor.org/videos/nanite/nanite.mp4</guid>
+      <enclosure url="http://rubymanor.org/videos/nanite/nanite.mp4" length="157670291" type="video/mp4"/>
+    </item>
+
+    <item>
+      <title>Rugalytics</title>
+      <description>&lt;a href="http://blog.theyworkforyou.co.nz/"&gt;Rob McKinnon&lt;/a&gt; "Rugalytics" &amp;mdash; &lt;a href="http://www.slideshare.net/delineator/rugalytics-ruby-manor-nov-2008-presentation"&gt;slides&lt;/a&gt;</description>
+      <link>http://rubymanor.org/videos/</link>
+      <pubDate>Thu, 17 Sep 2009 09:55:00 +0000</pubDate>
+      <guid>http://rubymanor.org/videos/rugalytics/rugalytics.mp4</guid>
+      <enclosure url="http://rubymanor.org/videos/rugalytics/rugalytics.mp4" length="228118408" type="video/mp4"/>
+    </item>
+
+  </channel>
+</rss>
+

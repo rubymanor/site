@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Ruby Manor 2: Manor Harder</title>
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.rubymanor.org/rss"/>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-size: 62.5%;
+        font-family: Helvetica, sans-serif;
+        padding-top: 1em;
+      }
+      
+      #boom {
+        margin: 0 auto;
+        width: 800px;
+        height: 600px;
+        display: block;
+        padding: 10px 0;
+        background: url(http://rubymanor.org/images/harder/manor-harder.jpg) no-repeat;
+      }
+            
+      #logo {
+        margin: 0 auto;
+        width: 560px;
+        background-color: white;
+      }
+      
+      h1 {
+        background-color: black;
+        font-size: 7em;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+        line-height: 1;
+      }
+      h1.popout {
+        background-color: transparent;
+        color: #FF0A0A;
+        margin-top: -68px;
+        margin-left: 2px;
+      }
+      
+      h2 {
+        width: 520px;
+        text-align: center;
+        font-size: 2.5em;
+        text-transform: uppercase;
+        margin-top: -4px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: black;
+        padding-top: 4px;
+        line-height: 1.2em;
+      }
+      
+      #soon, #act {
+        width: 520px;
+        text-align: center;
+      }
+      
+      #soon {
+        background-color: white;
+        margin: 0 auto;
+      }
+      
+      #soon h3 {
+        font-size: 4em;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: black;
+        width: 360px;
+        margin: -110px 60px 0;
+        padding: 2px 20px;
+        line-height: 1;
+      }
+      
+      #act {
+        font-size: 130%;
+        margin: 10px auto;
+      }
+      
+      #soon a, #act a, #more p a {
+        text-transform: uppercase;
+        color: white;
+      }
+      
+      #act a {
+        font-size: 5em;
+        font-weight: bold;
+      }
+      
+      #more {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 90%;
+      }
+      #more p {
+        font-variant: small-caps;
+        font-size: 1.6em;
+        line-height: 1.4;
+      }
+      #more p a {
+        font-size: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="boom">
+      <div id="logo">
+        <h1>Ruby Manor 2</h1>
+
+        <h2>Manor Harder</h2>
+      </div>
+    </div>
+  
+    <div id="soon">
+      <h3><a href="http://upcoming.yahoo.com/event/4810075/" title="Remind yourself about it">December 12th</a></h3>
+    </div>
+    
+    <div id="act">
+        <!--<a href="http://rubymanor.eventwax.com/ruby-manor-2-manor-harder">Book now</a>-->
+	<a href="videos">Watch videos now</a>
+    </div>
+    
+    <div id="more">
+      <p>A <a href="http://groups.google.com/group/ruby-manor/" title="Get inovled">ruby community</a> production in association with <a href="http://blog.rubymanor.org/" title="Read summaries">Manor Industries</a>. Shot on location at <a href="http://www.openstreetmap.org/?mlat=51.527196&mlon=-0.126622&zoom=17&layers=B000FTF">Hughes Parry Hall, London WC1H 9EF</a>.  Starring <a href="/harder/schedule" title="The schedule">a cast of thousands</a>.</p>
+      <p>Directed by <a href="http://twitter.com/rubymanor" title="Stay up to date">The Guvner</a>.</p>
+   </div>
+    
+    <script src="http://www.google.com/jsapi"></script>
+    <script>
+      // Load jQuery
+      google.load("jquery", "1.3.2");
+
+      google.setOnLoadCallback(function() {
+        $('#logo h1').after($('#logo h1').clone().addClass('popout'));
+      });
+    </script>
+
+  </body>
+</html>
