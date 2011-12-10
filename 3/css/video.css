@@ -79,6 +79,8 @@ h1, h1 a, h2, h2 a {
 .thumbnails .details {
   opacity: 0.85;
   text-align: right;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .thumbnails .details img {
