@@ -65,7 +65,7 @@ h1, h1 a, h2, h2 a {
   margin: 0 0 0.3em 0;
 }
 
-.details p {
+.details p, .details h3 {
   color: #666;
   font-weight: normal;
   margin: 0;
@@ -73,14 +73,27 @@ h1, h1 a, h2, h2 a {
 
 .details a {
   font-weight: bold;
-  color: #999;
+  color: #ccc;
+}
+
+.thumbnails header {
+  margin-bottom: 2em;
 }
 
 .thumbnails .details {
   opacity: 0.85;
   text-align: right;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
+  float: left;
+  width: 306px;
+  height: 180px;
+  background-color: #222;
+  margin-right: 12px;
+}
+
+.thumbnails .details h3 {
+  font-size: 14px;
 }
 
 .thumbnails .details img {
