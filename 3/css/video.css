@@ -59,6 +59,7 @@ h1, h1 a, h2, h2 a {
   padding: 10px;
   background-color: #111;
   opacity: 0.65;
+  text-align: right;
 }
 
 .details h3 {
