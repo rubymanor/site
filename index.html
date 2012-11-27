@@ -7,6 +7,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     <style>
+      p {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+      }
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      @media (min-width: 768px) {
+        body {
+          background-image: url(/images/wallpaper.jpg);
+          background-repeat: repeat;
+        }
+        .shadow-container {
+          box-shadow: inset 0 -5px 10px 0px black
+        }
+      }
+      .shadow-container {
+        background-color: white;
+        padding-bottom: 2em;
+      }
+
+      .subhead h1 {
+        margin: 0 0 10px 0;
+        font-size: 64px;
+        line-height: 64px;
+      }
+      .subhead p.lead {
+        font-size: 18px;
+        line-height: 24px;
+      }
+      .content section {
+        margin-bottom: 50px;
+      }
+      .content section.lead p {
+        font-size: 22px;
+        line-height: 28px;
+      }
+
+      @media (min-width: 481px) {
+        .subhead {
+          margin: 20px 0;
+        }
+        .subhead .page-header {
+          padding-bottom: 30px;
+        }
+        .subhead h1 {
+          margin-bottom: 20px;
+        }
+
+        .content section.lead {
+          margin-bottom: 70px;
+        }
+        .content section.lead p {
+          font-size: 28px;
+          line-height: 34px;
+        }
+      }
+
       .side-nav {
         margin-top: 10px;
       }
@@ -17,95 +78,93 @@
         font-size: 24.5px;
         line-height: 24.5px;
       }
-      body {
-        background-image: url(/images/wallpaper.jpg);
-        background-repeat: repeat;
-      }
-      .container {
-        background-color: white;
-        box-shadow: inset 0 0 10px 0px black
-      }
-      .navbar-inner {
-        border-radius: 0px;
-        -webkit-border-radius: 0px;
-        -moz-border-radius: 0px;
-      }
-      .content {
-        margin-bottom: 2em;
-      }
-      .content section {
-        margin-bottom: 4em;
-      }
+
       .framed-avatar {
         background-image: url(/images/gravatar_frame.png);
         padding: 8px;
         width: 50px;
         height: 50px;
       }
+
+      @media (min-width: 481px) {
+        .manor-4-link {
+          padding-left: 120px;
+        }
+      }
     </style>
   </head>
   <body data-spy="scroll" data-target=".side-nav" data-offset="10">
-    <div class="container">
-      <header class="navbar">
-        <div class="navbar-inner">
-          <a href="/" class="brand">Ruby Manor</a>
-
-          <ul class="nav pull-right">
-            <li class="active"><a href="/">about</a></li>
-            <li><a href="/3/">ru3y manor</a></li>
-            <li><a href="/harder">harder</a></li>
-            <li><a href="/classic">classic</a></li>
-          </ul>
-        </div>
-      </header>
-      <header class="subhead row">
-        <div class="page-header span8 offset1">
-          <h1>Ruby Manor <small>the lean Ruby conference</small></h1>
+    <div class="container shadow-container">
+      <header class="subhead">
+        <div class="row">
+          <div class="span10 offset1">
+            <div class="page-header">
+              <div class="row">
+                <div class="span6">
+                  <h1>Ruby Manor</h1>
+                  <p class="lead">A conference for the <a href="http://ruby-lang.org/">ruby</a> community with a focus on <a href="#manifesto">simplicity</a></p>
+                </div>
+                <div class="span4">
+                  <ul class="nav nav-pills pull-right">
+                    <li class="active"><a href="/">about</a></li>
+                    <li><a href="/3/">ru3y manor</a></li>
+                    <li><a href="/harder">harder</a></li>
+                    <li><a href="/classic">classic</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </header>
       <div class="row">
+        <div class="span8 offset2 content">
+          <section id="what" class="lead">
+            <p>Ruby Manor is two things. The first, and most obvious, is <a href="#when">the series of conferences</a> held in London focussing on the <a href="http://ruby-lang.org/">Ruby programming language</a>. The second is <a href="#manifesto">our manifesto</a> for how we believe conferences could be run.</p>
+          </section>
+        </div>
+      </div>
+      <div class="row">
         <div class="span2 offset1">
-          <div data-spy="affix" data-offset-top="162" class="nav side-nav affix-top">
+          <div data-spy="affix" data-offset-top="460" class="nav side-nav affix-top">
             <ul class="nav nav-list nav-stacked nav-pills">
-              <li><a href="#what">What is it?</a></li>
               <li><a href="#when">History</a></li>
               <li><a href="#who">Who is behind it?</a></li>
               <li><a href="#manifesto">Manifesto</a></li>
+              <li><a href="#how">Manifesto</a></li>
             </ul>
           </div>
         </div>
         <div class="span6 content">
-          <section id="what">
-            <h1>What Is Ruby Manor?</h1>
-            <p>Ruby Manor is two things. The first, and most obvious, is <a href="#when">the series of conferences</a> held in London focussing on the <a href="http://ruby-lang.org/">Ruby programming language</a>. The second is <a href="#manifesto">our manifesto</a> for how we believe conferences could be run.</p>
-          </section>
           <section id="when">
             <h1>History</h1>
-            <div class="media">
-              <a href="/classic/" class="pull-left">
-                <img class="media-object img img-polaroid" src="images/classic-small.png">
-              </a>
-              <div class="media-body">
-                <p>The first in the series, originally just &ldquo;Ruby Manor&rdquo; but now <a href="http://en.wikipedia.org/wiki/Retroactive_continuity">retconned</a> as &ldquo;<a href="http://rubymanor.org/classic/">Ruby Manor Classic</a>&rdquo; to avoid confusion with the series, happened in 2008. We gathered together 120 rubyists from London, the rest of the UK, and mainland Europe for a day of 10 talks about their favourite language. All this for only &pound;12!</p>
-              </div>
-            </div>
-            <div class="media">
-              <a href="/classic/" class="pull-left">
-                <img class="media-object img img-polaroid" src="images/harder-small.png">
-              </a>
-              <div class="media-body">
-                <p>We followed this in 2009 with &ldquo;<a href="http://rubymanor.org/harder/">Ruby Manor 2: Manor Harder</a>&rdquo;. This time it was a slightly smaller affair with just over 100 attendees paying &pound;8 each. Not everything was smaller though, as we managed to fit in 12 talks.</p>
-              </div>
-            </div>
-            <div class="media">
-              <a href="/classic/" class="pull-left">
-                <img class="media-object img img-polaroid" src="images/ru3ymanor-small.png">
-              </a>
-              <div class="media-body">
-                <p>The conference took a break in 2010 while we worked out what we could do better next time around. In 2011 we returned with our third installment, &ldquo;<a href="http://rubymanor.org/3/">Ru3y Manor</a>&rdquo;. For &pound;14 per attendee we filled a lecture theatre with 150 attendees and 8 talks.</p>
-              </div>
-            </div>
-            <p>We are currently planning the fourth in the series and aim to run it in Spring 2013.</p>
+            <ul class="media-list previous-manors">
+              <li class="media">
+                <a href="/classic/" class="pull-left">
+                  <img class="media-object img img-polaroid" src="images/classic-small.png">
+                </a>
+                <div class="media-body">
+                  <p>The first in the series, originally just &ldquo;Ruby Manor&rdquo; but now <a href="http://en.wikipedia.org/wiki/Retroactive_continuity">retconned</a> as &ldquo;<a href="http://rubymanor.org/classic/">Ruby Manor Classic</a>&rdquo; to avoid confusion with the series, happened in 2008. We gathered together 120 rubyists from London, the rest of the UK, and mainland Europe for a day of 10 talks about their favourite language. All this for only &pound;12!</p>
+                </div>
+              </li>
+              <li class="media">
+                <a href="/classic/" class="pull-left">
+                  <img class="media-object img img-polaroid" src="images/harder-small.png">
+                </a>
+                <div class="media-body">
+                  <p>We followed this in 2009 with &ldquo;<a href="http://rubymanor.org/harder/">Ruby Manor 2: Manor Harder</a>&rdquo;. This time it was a slightly smaller affair with just over 100 attendees paying &pound;8 each. Not everything was smaller though, as we managed to fit in 12 talks.</p>
+                </div>
+              </li>
+              <li class="media">
+                <a href="/classic/" class="pull-left">
+                  <img class="media-object img img-polaroid" src="images/ru3ymanor-small.png">
+                </a>
+                <div class="media-body">
+                  <p>The conference took a break in 2010 while we worked out what we could do better next time around. In 2011 we returned with our third installment, &ldquo;<a href="http://rubymanor.org/3/">Ru3y Manor</a>&rdquo;. For &pound;14 per attendee we filled a lecture theatre with 150 attendees and 8 talks.</p>
+                </div>
+              </li>
+            </ul>
+            <p class="manor-4-link">We are currently planning the fourth in the series and aim to run it in Spring 2013.</p>
           </section>
           <section id="who">
             <h1>Who is behind it?</h1>
@@ -186,8 +245,9 @@
             <p>We don&rsquo;t believe in big-name keynote speakers appearing for their own sake, or sponsor presentations, or war stories that aren&rsquo;t relevant. We want to actively encourage presentations that are thoughtfully prepared and rehearsed, with extensive community involvement to ensure they cover the aspects that everyone finds most interesting and relevant.</p>
             <p>We believe that conferences don&rsquo;t need to cost hundreds of pounds. We believe that many typical conference traits are unnecessary &mdash; t-shirts, swag, pastries, and so on &mdash; and that without these distractions, everyone can save money without compromising their conference experience.</p>
             <p>We want to deliver a <strong>world-class</strong> developer conference that redefines the community&rsquo;s expectations about what a conference really ought to be.</p>
-
-            <h2>Process</h2>
+          </section>
+          <section id="how">
+            <h1>How it works</h1>
             <p>We have tried with each Ruby Manor to involve the community directly. To this end we only act as organisers and never as curators. Our CFP process is held in the open and we encourage the community to interact directly with those proposing talks to help focus their proposal on what the community would find most relevant. Final selection of talks is then made by community vote, with the most popular talks being chosen</p>
             <p>The details of this process change over time, but it is key to our manifesto goal of relevancy of content. Originally it was run by hand via our <a href="https://groups.google.com/group/ruby-manor">mailing list</a>, but for Ru3y Manor we premiered a webapp, <a href="http://vestibule.rubymanor.org/">Vestibule</a>, to provide more structure and publicise the community involvement more. We plan to improve Vestibule for future Ruby Manor installments.</p>
             <p>Ruby Manor something something transparent costings something something.</p>
