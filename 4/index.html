@@ -2,88 +2,308 @@
 <html>
   <head>
     <!-- Bootstrap -->
-    <link href="/bootstrap/css/bootstrap-united-min.css" rel="stylesheet" media="screen">
-    <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
     <!--[if lte IE 8]>
       <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
     <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
     <title>Ruby Manor</title>
-    <style>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: inherit;
+        font-weight: inherit;
+        font-size: inherit;
+        line-height: inherit;
+      }
+
       body {
-        margin: 20px 0;
+        background: white;
+        color: #666461;
+        font-family: "Lucida Grande", Helvetica, sans-serif;
+        font-size: 15px;
+        line-height: 28px;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
       }
 
-      section {
-        margin-bottom: 20px;
+      #wrapper {
+        padding: 14px 42px 70px;
+        max-width: 960px;
+        margin: 0 auto;
       }
 
-      section p {
-        font-size: 24px;
-        line-height: 30px;
+      .large,
+      h1,
+      #feature #info p,
+      #about h2 {
+        font-family: "Source Sans Pro";
+        font-size: 21px;
+        line-height: 28px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: #1C1C1B;
       }
 
-      .left-col {
-        padding-left: 60px;
+      .small,
+      header li,
+      #feature #info p.more,
+      #jump li,
+      #about h3 {
+        font-family: "Source Sans Pro";
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: #1C1C1B;
       }
 
-      .right-col {
-        padding-right: 60px;
+      #feature h1 {
+        font-family: "Source Sans Pro";
+        font-size: 120px;
+        line-height: 140px;
+        font-weight: 700;
+        letter-spacing: 0;
+        color: #1C1C1B;
+      }
+
+      a {
+        text-decoration: none;
+        color: #6987F5;
+      }
+
+      a:hover, a:focus {
+        text-decoration: underline;
+      }
+
+      header {
+        overflow: hidden;
+      }
+
+      header h1 {
+        float: left;
+      }
+
+      header ul {
+        position: relative;
+        float: right;
+      }
+
+      header li {
+        list-style: none;
+        display: inline;
+        padding-right: 21px;
+      }
+
+      header li:last-child {
+        padding-right: 0;
+      }
+
+      #feature {
+        padding-left: 20%;
+      }
+
+      #lead-in {
+        position: relative;
+        margin: 14px -42px -119px;
+        background: #E2DED5 url(/images/4/reflection.png) no-repeat 45% 150%;
+        text-align: center;
+      }
+
+      @media (min-width: 1044px) {
+        #lead-in {
+          margin: 14px -21px -119px;
+        }
+      }
+
+      #lead-in img {
+        display: inline;
+        max-width: 100%;
+        height: auto;
+        padding: 28px 0 28px;
+      }
+
+      #lead-in p {
+        display: none;
+        float: left;
+        padding: 14px 14px 0;
+        background-color: yellow;
+      }
+
+      @media (min-width: 1044px) {
+        #lead-in p {
+          background-color: blue;
+          padding: 14px 21px 0;
+        }
+      }
+
+      #feature h1 {
+        position: relative;
+        z-index: 10;
+        padding: 42px 0 0;
+        text-indent: -1px;
+      }
+
+      #feature h1 a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      #feature h1 a:hover {
+        color: #666;
+      }
+
+      #feature #info p.time {
+        position: relative;
+        padding-right: 50%;
+        overflow: visible;
+      }
+
+      #feature #info p.time .start {
+        position: relative;
+        float: left;
+        margin-left: -100%;
+        left: 100%;
+        background: white;
+        z-index: 10;
+        padding-right: 3px;
+      }
+
+      #feature #info p.time .dash {
+        position: relative;
+        float: left;
+        margin-left: -100%;
+        left: 100%;
+        width: 100%;
+        overflow: hidden;
+        color: transparent;
+        border-bottom: 2px solid black;
+        height: 14px;
+      }
+
+      #feature #info p.time .end {
+        position: relative;
+        float: left;
+        margin-left: -100%;
+        left: 200%;
+        background: white;
+        z-index: 10;
+        padding-left: 7px;
+      }
+
+      #feature #info p.more {
+        clear: both;
+        padding-top: 28px;
+        line-height: 28px;
+      }
+
+      #feature #info p.more a {
+        padding: 3px 7px;
+        border: 1px solid;
+      }
+
+      #what {
+        margin: 56px 0 0 0;
+      }
+
+      .info {
+        clear: none;
+        float: left;
+        width: 80%;
+        padding-bottom: 54px;
+      }
+
+      .info h2 {
+        margin: 0 0 28px;
+      }
+
+      .info h3 {
+        margin: 28px 0 0;
+        padding-left: 25%;
+      }
+
+      .info p, #map-container {
+        margin: 14px 0;
+        padding-left: 25%;
       }
 
       #map {
         height: 240px;
-        margin-bottom: 10px;
       }
     </style>
+
   </head>
+
   <body>
-    <div class="container vevent">
-      <div class="row">
-        <div class="span12">
-          <div class="hero-unit" id="hcalendar-Ruby-Manor-4">
-            <a class="url" href="http://rubymanor.org/4">
-              <h1 class="summary">Ruby Manor 4</h1>
-            </a>
-              <time datetime="2013-04-06T10:00Z" class="dtstart">April 6, 2013 10am</time>&mdash;<time datetime="2013-04-06T18:00Z" class="dtend">6pm</time>
-            </p>
-            <p class="description">The fourth Ruby Manor conference: a community-driven, no-bullshit conference for the Ruby community with a focus on simplicity.</p>
-            <p><a href="https://www.eventbrite.co.uk/waitlist?eid=5235814462&tid=0" class="btn btn-large btn-primary">Sold out! Join the waiting list</a></p>
+
+    <div id="wrapper">
+
+      <header>
+        <h1>Ruby Manor</h1>
+        <ul>
+          <li>4.0!</li>
+          <li><a href="/">About</a></li>
+          <li><a href="/3">Ru3y Manor</a></li>
+          <li><a href="/harder">Harder</a></li>
+          <li><a href="/classic">Classic</a></li>
+        </ul>
+      </header>
+
+      <section id="lead-in">
+        <img src="/images/4/ruby-manor.2.gif" alt="ruby" />
+      </section>
+
+      <section id="feature">
+        <div class="hcalendar-Ruby-Manor-4">
+          <h1><a class="url" href="http://rubymanor.org/4">4.0!</a></h1>
+          <div id="info">
+            <p>6th April 2013!</p>
+            <p class="time"><time datetime="2013-04-06T10:00Z" class="start dtstart">10am</time><span class="dash"> - </span><time datetime="2013-04-06T18:00Z" class="end dtend">6pm</time></p>
+            <p class="more">Sold out! <a href="https://www.eventbrite.co.uk/waitlist?eid=5235814462&tid=0">Join&nbsp;the&nbsp;waiting&nbsp;list</a></p>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="span6">
-          <div class="left-col">
-            <section>
-              <h1>Call for proposals</h1>
-              <p><a href="http://vestibule.rubymanor.org">Propose and discuss talks on Vestibule</a>.</p>
-            </section>
-            <section>
-              <h1>Tickets</h1>
-              <p>Were <a href="https://rubymanor.eventbrite.co.uk/">&pound;15, via Eventbrite</a>, but are now sold out!</p>
-              <p>If you want a chance of getting in <a href="https://www.eventbrite.co.uk/waitlist?eid=5235814462&tid=0">join the waiting list</a>, or <a href="http://vestibule.rubymanor.org/proposals/new">propose a talk</a>.</p>
-            </section>
-            <section>
-              <h1>More details</h1>
-              <p>More details on <a href="http://lanyrd.com/2013/ruby-manor/">Lanyrd</a>.</p>
-            </section>
-          </div>
-        </div>
-        <div class="span6">
-          <div class="right-col">
-            <section>
-              <h1>Venue</h1>
-              <div id="map"></div>
-              <p class="location">
-                Portland Crescent Conference Centre, International Students House, 229 Great Portland Street, London
-              </p>
-            </section>
-          </div>
-        </div>
-      </div>
+      </section>
+
+      <section id="what" class="info">
+        <p>The fourth Ruby Manor conference: a community-driven, no-bullshit conference for the Ruby community with a focus on simplicity.</p>
+      </section>
+
+      <section id="cfp" class="info">
+        <h1>Call for proposals</h1>
+        <p><a href="http://vestibule.rubymanor.org">Propose and discuss talks on Vestibule</a>.</p>
+      </section>
+
+      <section id="tickets" class="info">
+        <h1>Tickets</h1>
+        <p>Were <a href="https://rubymanor.eventbrite.co.uk/">&pound;15, via Eventbrite</a>, but are now sold out!</p>
+        <p>If you want a chance of getting in <a href="https://www.eventbrite.co.uk/waitlist?eid=5235814462&tid=0">join the waiting list</a>, or <a href="http://vestibule.rubymanor.org/proposals/new">propose a talk</a>.</p>
+      </section>
+
+      <section id="details" class="info">
+        <h1>More details</h1>
+        <p>More details on <a href="http://lanyrd.com/2013/ruby-manor/">Lanyrd</a>.</p>
+      </section>
+
+      <section id="venue" class="info">
+        <h1>Venue</h1>
+        <div id="map-container"><div id="map"></div></div>
+        <p class="location">
+          Portland Crescent Conference Centre, International Students House, 229 Great Portland Street, London
+        </p>
+      </section>
+
     </div>
+  </body>
+</html>
+
+
+
+
 
     <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
