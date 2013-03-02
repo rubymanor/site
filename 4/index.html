@@ -31,7 +31,7 @@
       }
 
       #wrapper {
-        padding: 14px 42px 70px;
+        padding: 14px 42px 28px;
         max-width: 960px;
         margin: 0 auto;
       }
@@ -91,7 +91,13 @@
 
       header ul {
         position: relative;
-        float: right;
+        float: left;
+      }
+      
+      @media (min-width: 640px) {
+        header ul {
+          float: right;
+        }
       }
 
       header li {
@@ -104,16 +110,12 @@
         padding-right: 0;
       }
 
-      #feature {
-        width: 65%;
-        margin: 0 auto;
-      }
-
       #lead-in {
         position: relative;
-        margin: 14px -42px -119px;
+        margin: 14px -42px -119px -21px;
         background: #E2DED5 url(/images/4/reflection.png) no-repeat 45% 150%;
         text-align: center;
+        text-indent: -28px;
       }
 
       @media (min-width: 1044px) {
@@ -136,6 +138,17 @@
         }
       }
 
+      #feature {
+          width: 100%;
+      }
+
+      @media (min-width: 640px) {
+        #feature {
+          width: 80%;
+          margin: 0 0 0 20%;
+        }
+      }
+
       #feature h1 {
         position: relative;
         z-index: 10;
@@ -145,16 +158,17 @@
 
       #feature h1 a {
         text-decoration: none;
-        color: inherit;
+        color: #1C1C1B;
       }
 
-      #feature h1 a:hover {
-        color: #666;
+      #feature h1 a:hover,
+      #feature h1 a:focus {
+        color: #6987F5;
       }
 
       #feature #info p.time {
         position: relative;
-        padding-right: 50%;
+        padding-right: 37.5%;
         overflow: visible;
       }
 
@@ -192,26 +206,30 @@
 
       #feature #info p.more {
         clear: both;
-        padding-top: 28px;
-        line-height: 28px;
-      }
-
-      #feature #info p.more a {
-        padding: 3px 7px;
-        border: 1px solid;
+        margin-top: 21px;
+        float: left;
+        padding: 6px 7px 7px;
+        border: 1px solid #6987F5;
       }
 
       #what {
-        margin: 56px 0 0 0;
+        clear: both;
+        padding: 56px 0 0 0;
       }
 
       .info {
         clear: none;
-        float: left;
         width: 100%;
-        margin-bottom: 84px;
+        margin-bottom: 42px;
       }
 
+      @media (min-width: 640px) {
+        .info {
+          width: 80%;
+          padding-left: 20%;
+        }
+      }
+      
       .info h2 {
         margin: 0 0 28px;
       }
@@ -221,24 +239,48 @@
         padding-left: 25%;
       }
 
-      @media (min-width: 768px) {
-        .info p, #map-container {
-          width: 65%;
-          margin-left: auto;
-          margin-right: auto;
+      #what {
+        margin: 63px 0 56px 0;
+      }
+
+      @media (min-width: 640px) {
+        .info p, #what {
+          width: 70%;
+          margin-left: 20%;
         }
       }
 
-      .info p, #map {
-        margin-top: 42px;
+      .info p {
+        margin-top: 14px;
+      }
+      
+      #venue {
+        width: 100%;
+        padding-left: 0;
+      }
+      
+      @media (min-width: 640px) {
+        #venue h1 {
+          width: 70%;
+          margin-left: 20%; 
+        }
+      }
+      
+      #map-container {
+        position: relative;
+        margin: 0 -42px 0 -21px;
+        width: auto;
       }
 
-      #what {
-        margin: 63px 0 84px 0;
+      @media (min-width: 1044px) {
+        #map-container {
+          margin: 0 -21px;
+        }
       }
-
+      
       #map {
-        height: 240px;
+        margin-top: 21px;
+        height: 280px;
       }
     </style>
 
@@ -260,7 +302,7 @@
       </header>
 
       <section id="lead-in">
-        <img src="/images/4/ruby-manor.3.gif" alt="ruby" />
+        <img src="../images/4/ruby-manor.3.gif" alt="ruby" />
       </section>
 
       <section id="feature">
@@ -274,7 +316,7 @@
         </div>
       </section>
 
-      <section id="what" class="info">
+      <section id="what">
         <p>The fourth Ruby Manor conference: a community-driven, no-bullshit conference for the Ruby community with a focus on simplicity.</p>
       </section>
 
