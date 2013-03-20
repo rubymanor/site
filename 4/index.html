@@ -243,7 +243,7 @@
       }
 
       @media (min-width: 640px) {
-        .info p, #what {
+        .info p, #what, .info .lanyrd-target-schedule {
           width: 70%;
           margin-left: 20%;
         }
@@ -335,6 +335,24 @@
         <p class="location">
           Portland Crescent Conference Centre, International Students House, 229 Great Portland Street, London
         </p>
+      </section>
+
+      <section id="schedule" class="info">
+        <h1>Schedule</h1>
+        <!-- Add this where you want the output to appear -->
+        <div class="lanyrd-target-schedule">
+          <a href="http://lanyrd.com/2013/ruby-manor/schedule/"
+              class="lanyrd-schedule"
+              data-lanyrd-speakers
+              data-lanyrd-speakerlabels
+              data-lanyrd-speakerbios
+              data-lanyrd-iframe>
+              Schedule for Ruby Manor 4 on Lanyrd
+          </a>
+        </div>
+
+        <!-- Add this to the end of body -->
+        <script src="http://cdn.lanyrd.net/badges/embed-v1.min.js"></script>
       </section>
 
     </div>
