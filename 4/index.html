@@ -362,10 +362,6 @@
   </body>
 </html>
 
-
-
-
-
     <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -380,12 +376,13 @@ pageTracker._trackPageview();
     <script>
       $(function() {
         var map = L.map('map').setView([51.523334, -0.144582], 16);
-        L.tileLayer('http://{s}.tile.cloudmade.com/c0a829fc65414d4bbd8d51416d4a1471/997/256/{z}/{x}/{y}.png', {
-      attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
-      maxZoom: 18
-  }).addTo(map);
+
+        L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+          maxZoom: 18
+        }).addTo(map);
         L.marker([51.523334, -0.144582]).addTo(map)
-          .bindPopup('<h3 style="margin-bottom: 0;">Ruby Manor 4</h3><p style="margin-top: 0;">Portland Crescent Conference Centre</p>')
+          .bindPopup('<h3 style="margin-bottom: 0;">Ruby Manor 4</h3><p style="margin-top: 0;">Portland Crescent Conference Centre</p>');
       })
     </script>
 
