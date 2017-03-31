@@ -2,7 +2,6 @@
   <head>
     <title>Ruby Manor 2 : Manor Harder : The Trailer</title>
     <script src="/scripts/jquery.min.js" language="javascript"></script>
-    <script src="/videos/AC_QuickTime.js" language="javascript"></script>
     <style>
       body {
         background-color: black;
@@ -112,10 +111,9 @@
 
     <div id="boom">
       <div class="presentation">
-        <script language="javascript">
-        // 384 is the height of the video, give it an extra 16 for the controls => 400
-        QT_WriteOBJECT('http://video.rubymanor.org/harder/trailer/ruby_manor_2_manor_harder_trailer.mp4', '640', '496', '');
-        </script>
+        <video width="640" height="496" controls autoplay>
+          <source src="http://video.rubymanor.org/harder/trailer/ruby_manor_2_manor_harder_trailer.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
 

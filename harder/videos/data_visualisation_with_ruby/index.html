@@ -2,7 +2,6 @@
   <head>
     <title>Chris Lowis - Data Visualisation With Ruby :: Ruby Manor 2 : Manor Harder</title>
     <script src="/scripts/jquery.min.js" language="javascript"></script>
-    <script src="/videos/AC_QuickTime.js" language="javascript"></script>
     <style>
       body {
         background-color: black;
@@ -19,8 +18,8 @@
         display: block;
         padding: 0;
         margin-top: 40px;
-    	  margin-bottom: 40px;
-    	  /* background: url(http://rubymanor.org/images/harder/manor-harder.jpg) no-repeat; */
+        margin-bottom: 40px;
+        /* background: url(http://rubymanor.org/images/harder/manor-harder.jpg) no-repeat; */
       }
 
       #logo {
@@ -117,11 +116,10 @@
 
     <div id="boom">
       <div class="presentation">
-        <script language="javascript">
-        // 288 is the height of the video, give it an extra 16 for the controls => 304
-        QT_WriteOBJECT('http://video.rubymanor.org/harder/data_visualisation_with_ruby/chris_lowis_data_visualisation_with_ruby.mp4', '720', '304', '');
-        </script>
-        <p>Having problems? Try <a href="http://perian.org/">Perian</a>, or <a href="http://video.rubymanor.org/harder/data_visualisation_with_ruby/chris_lowis_data_visualisation_with_ruby.mp4">download</a> and use <a href="http://www.videolan.org/vlc/">vlc</a>.</p>
+        <video width="720" height="304" controls autoplay>
+          <source src="http://video.rubymanor.org/harder/data_visualisation_with_ruby/chris_lowis_data_visualisation_with_ruby.mp4" type="video/mp4">
+        </video>
+        <p>Having problems? Try <a href="http://video.rubymanor.org/harder/data_visualisation_with_ruby/chris_lowis_data_visualisation_with_ruby.mp4">download</a> and use <a href="http://www.videolan.org/vlc/">vlc</a>.</p>
       </div>
     </div>
 
