@@ -1,91 +1,85 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
-	<head>
-	<style type="text/css">
+  <head>
+    <style type="text/css">
+      body {
+        background-image: url(/images/wallpaper.jpg);
+        background-repeat: repeat;
+        color: white;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 16px;
+      }
 
-	body {
-		background-image: url(/images/wallpaper.jpg);
-		background-repeat: repeat;
-		color: white;
-		font-family: Georgia, "Times New Roman", Times, serif;
-		font-size: 16px;
-	}
+      h1 {
+        margin-bottom: 0.5em;
+        margin-top: 0;
+        font-size: 4em;
+        font-variant: small-caps;
+      }
 
-	h1 {
-		margin-bottom: 0.5em;
-		margin-top: 0;
-		font-size: 4em;
-		font-variant: small-caps;
-	}
+      p.subtitle {
+        margin-top: 0px;
+        line-height: 0px;
+        font-variant: small-caps;
+        font-size: 2em;
+      }
 
-	p.subtitle {
-		margin-top: 0px;
-		line-height: 0px;
-		font-variant: small-caps;
-		font-size: 2em;
-	}
+      .content {
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 3em;
+        background-repeat: no-repeat;
+        padding: 120px;
+        height: 534px;
+        width: 660px;
+        background-image: url(/images/frame.png);
+      }
 
-	.content {
-		margin-right: auto;
-		margin-left: auto;
-		margin-top: 3em;
-		background-repeat: no-repeat;
-		padding: 120px;
-		height: 534px;
-		width: 660px;
-		background-image: url(/images/frame.png);
-	}
+      dt {
+        font-size: 120%;
+        font-variant: small-caps;
+      }
 
-	dt {
-		font-size: 120%;
-		font-variant: small-caps;
-	}
+      dd {
+        margin-bottom: 0.3em;
+      }
 
-	dd {
-	        margin-bottom: 0.3em;
-	}
+      a {
+        font-weight: bold;
+        color: white;
+      }
 
-	a {
-		font-weight: bold;
-		color: white;
-	}
+      hr {
+        width: 2px;
+        border-width: 0px;
+        color: #ff5754;
+        height: 2px;
+      }
 
-	hr {
-		width: 2px;
-		border-width: 0px;
-		color: #ff5754;
-		height: 2px;
-	}
+      .signUp {
+        font-size: 200%;
+        text-align: center;
+        margin-top: 0.5em
+      }
 
-	.signUp {
-          font-size: 200%;
-	  text-align: center;
-	  margin-top: 0.5em
-	}
+      .trailer {
+        margin-top:6em;
+        text-align:center;
+      }
+    </style>
+    <title>Ruby Manor - Videos</title>
 
-.trailer {
-margin-top:6em;
-text-align:center;
-}
+  </head>
+  <body>
 
-	</style>
-		<title>Ruby Manor - Videos</title>
-
-    <script src="/videos/AC_QuickTime.js" language="javascript"></script>
-
-	</head>
-	<body>
-	
     <div class="content">
-<div class="trailer">
-    <script language="javascript">
-      // 384 is height of video, give it an extra 16 for the controls => 400
-      QT_WriteOBJECT('http://video.rubymanor.org/classic/trailer/trailer.m4v', '480', '286', '');
-    </script>
-</div>
+      <div class="trailer">
+        <video width="480" height="286" controls autoplay>
+          <source src="http://video.rubymanor.org/classic/trailer/trailer.m4v" type="video/m4v">
+        </video>
+      </div>
     </div>
-    
-    
+
     <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -96,5 +90,5 @@ pageTracker._initData();
 pageTracker._trackPageview();
 </script>
 
-	</body>
+  </body>
 </html>
